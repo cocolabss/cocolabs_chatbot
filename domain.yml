@@ -1,0 +1,21 @@
+version: "3.1"
+
+intents:
+  - greet
+  - request_for_information
+  - request_cloud_dev_info
+
+entities:
+  - service
+
+responses:
+  utter_greet:
+    - text: "Hola, ¿cómo estás? Bienvenido a Coco Labs. Cuéntame en que te podemos ayudar."
+  utter_general_info:
+    - text: "Claro que si. Nosotros somos una empresa de desarrollo de software a la medida. Nos especializamos en el desarrollo de software para la nube, aplicaciones moviles, automatizacion de procesos, integracion de aplicaciones y desarrollo de paginas web."
+  utter_cloud_dev_info:
+    - text: "La migración en la nube se refiere al traslado de datos, aplicaciones y recursos de una infraestructura local a un entorno en la nube. Permite almacenar y acceder a la información de forma remota a través de servidores en internet. Los beneficios incluyen la reducción de costos en infraestructura y mantenimiento, la escalabilidad para adaptarse a las necesidades cambiantes, el acceso a datos desde cualquier lugar y dispositivo, la mejora en la seguridad de los datos, y la posibilidad de colaboración y trabajo en equipo de manera más eficiente."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

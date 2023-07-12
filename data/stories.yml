@@ -1,0 +1,15 @@
+version: "3.1"
+
+stories:
+  - story: happy path
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: request_for_information
+      - action: utter_general_info
+      - intent: request_cloud_dev_info
+      - action: utter_cloud_dev_info
+  - story: story 2
+    steps:
+      - intent: request_cloud_dev_info
+      - action: utter_cloud_dev_info
