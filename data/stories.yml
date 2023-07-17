@@ -25,7 +25,6 @@ stories:
 
   - story: fast request for general info
     steps:
-
       - intent: fast_request_4_general_info
       - action: utter_fast_greet
       - action: utter_general_info

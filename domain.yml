@@ -5,7 +5,12 @@ intents:
   - request_for_information
   - request_cloud_dev_info
   - fast request for general info
-
+  - request_automation_info
+  - request_chatbot_dev_info
+  - request_web_developement_info
+  - farewell
+  - fast_request_4_general_info
+  
 entities:
   - service
   - name
