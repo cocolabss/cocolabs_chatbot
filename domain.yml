@@ -1,6 +1,7 @@
 version: "3.1"
 
 intents:
+
   - greet
   - request_for_information
   - request_cloud_dev_info
@@ -10,10 +11,6 @@ intents:
   - request_web_developement_info
   - farewell
   - fast_request_4_general_info
-  
-entities:
-  - service
-  - name
 
 responses:
 
