@@ -14,38 +14,53 @@ intents:
 responses:
 
   utter_fast_greet:
-    - text: "¡Hola! Espero que estés muy bien, te has comunicado con el chatbot de Coco labs."
+    - text: "¡Hola! Espero que estés muy bien, te has comunicado con el chatbot de Coco🥥 labs."
 
   utter_greet:
-    - text: "¡Hola! Espero que estés muy bien, te has comunicado con el chatbot de Coco labs, ¿cómo puedo ayudarte?"
+    - text: "¡Hola! Espero que estés muy bien, te has comunicado con el chatbot de Coco🥥 labs, ¿cómo puedo ayudarte?"
 
   utter_general_info:
-    - text: "Somos una empresa de desarrollo de software. Nos especializamos en el desarrollo de software para la nube, aplicaciones moviles, automatizacion de procesos, integracion de aplicaciones, chatbots y desarrollo de paginas web. Comentame si te gustaria saber sobre alguno de nuestros servicios."
+    - text: "Somos una empresa de desarrollo de software. Nos especializamos en el desarrollo de software para la nube, aplicaciones moviles, automatizacion de procesos, integracion de aplicaciones, chatbots y desarrollo de paginas web."
     - text: "Coco es una empresa de desarrollo de software que se dedica a crear procesos de automatización, integración de sistemas y desarrollo web. Brindamos un servicio personalizado conforme a las necesidades de nuestros clientes, por lo que si estas interesado en nuestros servicios es importante que realicemos una reunion inicial donde nos indiques lo que tu o tu empresa necesita o busca solucionar, como funciona actualmente y posteriormente podamos brindarte una propuesta comercial del servicio junto a una cotización."
 
   utter_products_info:
     - text: "En coco labs brindamos los siguientes servicios: \n🥥 Análisis y desarrollo de sistemas.\n.🥥 Aplicaciones en la nube.\n🥥 Automatización de procesos.\n🥥 Desarrollo de páginas web.\n🥥 Desarrollo de software a la medida.\n🥥 Desarrollo y mejoramiento de páginas web.\n🥥 Integración de sistemas.\n 🥥 Migración y Aplicaciones en la nube.\nComentame si deseas mas información sobre alguno en especifico."
 
   utter_cloud_dev_info:
-    - text: "La migración y aplicaciones en la nube se refiere al traslado de datos, aplicaciones y recursos de una infraestructura local a un entorno en la nube. Permite almacenar y acceder a la información de forma remota a través de servidores en internet. Los beneficios incluyen la reducción de costos en infraestructura y mantenimiento, la escalabilidad para adaptarse a las necesidades cambiantes, el acceso a datos desde cualquier lugar y dispositivo, la mejora en la seguridad de los datos, y la posibilidad de colaboración y trabajo en equipo de manera más eficiente. ¿Te gustaría comunicarte con un asesor para que te brinde mas detalles?"
+    - text: "La migración y aplicaciones en la nube se refiere al traslado de datos, aplicaciones y recursos de una infraestructura local a un entorno en la nube."
+
+  utter_cloud_dev_info_2:
+    - text: "Permite almacenar y acceder a la información de forma remota a través de servidores en internet. "
 
   utter_automation_info:
-    - text: "La automatización de procesos de software consiste en usar tecnologías para realizar tareas repetitivas o manuales de forma automática, con la menor intervención humana, lo que nos ayuda a ahorrar tiempo, esfuerzo y minimizar errores. Por ejemplo, en lugar de ingresar datos manualmente en un sistema, podemos programar un software para hacerlo automáticamente. ¿Te gustaría comunicarte con un asesor para que te brinde mas detalles?"
+    - text: "La automatización de procesos de software consiste en usar tecnologías para realizar tareas repetitivas de forma automáticamente."
+  utter_automation_info_2:
+    - text: "Esto nos ayuda a ahorrar tiempo, esfuerzo y minimizar errores. Por ejemplo, en lugar de ingresar datos manualmente en un sistema, podemos programar un bot para hacerlo automáticamente."
 
   utter_web_developement_info:
-    - text: "El desarrollo de paginas web consiste en la construcción de portales o sitios donde integramos información de ayuda sobre tu organización o aplicativos que ayuden a la realización de tareas en tu empresa. ¿Te gustaría comunicarte con un asesor para que te brinde mas detalles?"
+    - text: "El desarrollo de paginas web consiste en la construcción de sitios web donde integramos información o aplicativos que ayuden a la realización de tareas en tu empresa."
 
   utter_chatbot_developement_info:
-    - text: "Un chatbot es una tecnología que interactúa con las personas de forma automática, usando datos predefinidos. En Coco ofrecemos la implementación de dos tipos de chatbot: Guiado y Conversacional. El guiado es más simple, se le presentan opciones al usuario y esté contesta de acuerdo a ellas como si fuera un cuestionario. El chatbot conversacional es capaz de responder a preguntas del usuario similar a como lo haría una persona con unas respuestas predefinidas. Con esto podrías optimizar los procesos de atención, siendo esta inmediata y por múltiples canales. ¿Te gustaría comunicarte con un asesor para que te brinde más detalles?"
+    - text: "Un chatbot es una tecnología que interactúa con las personas de forma automática y rápida usando datos predefinidos."
+
+  utter_chatbot_developement_info_2:
+    - text: "Con lo que podrías optimizar los procesos de atención, ya que se puede implementar por múltiples canales."
 
   utter_farewell:
-    - text: "Esperamos que esta información haya sido de ayuda, recuerda que te has contactado con el chatbot de Coco Labs. ¡Pasa un excelente día!"
+    - text: "Esperamos que esta información haya sido de ayuda, recuerda que te has contactado con el chatbot de Coco Labs."
+
+  utter_farewell_2:
+    - text: "Si tienes mas dudas no dudes en contactarte, ¡pasa un excelente día!"
+
+  utter_request_meeting:
+  - text:  "¿Te gustaría agendar una reunión con nuestro equipo?"
+  - text:  "¿Te gustaría programar una cita con nosotros?"
+
 
   utter_default_response:
     - text: "Lo siento, no comprendo tu mensaje. ¿Podrías reformularlo?"
-
   
-
+  
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
