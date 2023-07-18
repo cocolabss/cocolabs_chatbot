@@ -15,7 +15,7 @@
 #Ejecutar
 2. 
     - En consola:
-    * rasa shell
+    * rasa shell 
 
     En api:
     * rasa run --enable-api
