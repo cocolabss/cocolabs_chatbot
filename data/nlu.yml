@@ -4,6 +4,7 @@ nlu:
   - intent: greet
     examples: |
       - Hola
+      - hola
       - Hola, como estas?
       - Buenos días
       - buenas tardes
@@ -13,13 +14,13 @@ nlu:
       - Qué tal?
       - ¿Cómo te va?
       - ¿Como le va?
-      - ay venga
-      - oe
-      - hey
-      - oye
-      - oigan
-      - oiga
+      - ¿Como les va?
+      - como estan?
+      - como estás?
       - ¡Hola!
+      - OLA
+      - ola
+      - Ola
 
   - intent: fast_request_4_general_info
     examples: |
@@ -110,7 +111,6 @@ nlu:
       - chatbots
       - chatbot
       - quisiera saber sobre chatbots
-
 
   - intent: farewell
     examples: |
