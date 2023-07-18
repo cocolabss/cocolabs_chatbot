@@ -76,22 +76,6 @@ nlu:
       - automatizaciones de procesos
       - quisiera conocer acerca de la automatizacion de procesos 
       - ayudame a entender la automatizacion
-      
-  - intent: request_chatbot_dev_info
-    examples: |
-      - ¿a que se refiere con chatbot?
-      - ¿a que te refieres con chatbot?
-      - ¿que es un chatbot?
-      - ¿como funciona un chatbot?
-      - explicame el funcionamiento de un chatbot
-      - hableme sobre los chatbots
-      - cuentame sobre los chatbots
-      - quiero saber mas sobre la implementacion de chatbots
-      - ayudame a entender los chatbots
-      - no entiendo bien que es un chatbot
-      - quisiera conocer acerca del desarrollo de chatbots
-      - chatbots
-      - quisiera saber sobre chatbots
 
   - intent: request_web_developement_info
     examples: |
@@ -108,6 +92,25 @@ nlu:
       - desarrollo de paginas web
       - quisiera saber sobre el desarrollo de paginas web
       - paginas web
+
+  - intent: request_chatbot_dev_info
+    examples: |
+      - ¿a que se refiere con chatbot?
+      - ¿a que te refieres con chatbot?
+      - ¿que es un chatbot?
+      - ¿como funciona un chatbot?
+      - explicame el funcionamiento de un chatbot
+      - hableme sobre los chatbots
+      - cuentame sobre los chatbots
+      - quiero saber mas sobre la implementacion de chatbots
+      - ayudame a entender los chatbots
+      - no entiendo bien que es un chatbot
+      - quisiera conocer acerca del desarrollo de chatbots
+      - chatbots
+      - chatbot
+      - quisiera saber sobre chatbots
+
+
   - intent: farewell
     examples: |
       - gracias por la información, hasta luego
