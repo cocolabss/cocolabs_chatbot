@@ -8,9 +8,9 @@
 2. rasa train --fixed-model-name contact_bot
 
 #Ejecutar
-2. rasa shell
+2. 
+    - En consola:
+    * rasa shell
 
-
-- Responder por servicios
-- Que diga lo de la pagina
-
+    En api:
+    * rasa run --enable-api
