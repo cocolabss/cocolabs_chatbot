@@ -14,7 +14,7 @@ initContainers:
     # The commands below make sure that the /app directory is empty, and then it clones the rasa-x-demo repository.
     # The rasa image runs with UID 1001, that's why at the end you have to change owner for /app directory.
     args:
-      - "cd /app && rm -rf {,.[!.],..?}* && git clone https://github.com/RasaHQ/rasa-x-demo.git . && chown -R 1001:1001 /app"
+      - "cd /app && rm -rf {,.[!.],..?}* && git clone https://github.com/cocolabss/cocolabs_chatbot.git . && chown -R 1001:1001 /app"
     # Mount the `/app` directory which is shared with the init container that trains a model.
     volumeMounts:
       - mountPath: /app
