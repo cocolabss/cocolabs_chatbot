@@ -5,11 +5,47 @@ stories:
     steps:
       - intent: greet
       - action: utter_greet
+      
       - intent: request_for_information
       - action: utter_general_info
+
       - intent: request_cloud_dev_info
       - action: utter_cloud_dev_info
-  - story: story 2
+
+      - intent: request_automation_info
+      - action: utter_automation_info
+
+      - intent: request_web_developement_info
+      - action: utter_web_developement_info
+
+      - intent: request_chatbot_dev_info
+      - action: utter_chatbot_developement_info
+
+      - intent: farewell
+      - action: utter_farewell
+
+  - story: fast request for general info
     steps:
-      - intent: request_cloud_dev_info
-      - action: utter_cloud_dev_info
+      - intent: fast_request_4_general_info
+      - action: utter_fast_greet
+      - action: utter_general_info
+      - intent: farewell
+      - action: utter_farewell
+
+  # - story: request dev info
+  #   steps:
+  #     - intent: request_cloud_dev_info
+  #     - action: utter_cloud_dev_info
+
+  # - story: request automation info
+  #   steps:
+  #     - intennt: request_automation_info
+  #     - action: utter_automation_info
+  
+  # - story: request web developement info
+  #     - intent: request_web_developement_info
+  #     - action: utter_web_developement_info
+
+  # - story: request chatbot development info
+  #     - intent: request_chatbot_developement_info
+  #     - action: utter_chatbot_developement_info

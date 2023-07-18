@@ -1,3 +1,37 @@
 version: "3.1"
 
 rules:
+  - rule: happy path
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: happy path2
+    steps:
+      - intent: request_for_information
+      - action: utter_general_info
+
+  - rule: happy path3
+    steps:
+      - intent: request_cloud_dev_info
+      - action: utter_cloud_dev_info
+
+  - rule: happy path4
+    steps:
+      - intent: request_automation_info
+      - action: utter_automation_info
+
+  - rule: happy path5
+    steps:
+      - intent: request_web_developement_info
+      - action: utter_web_developement_info
+
+  - rule: happy path6
+    steps:
+      - intent: request_chatbot_dev_info
+      - action: utter_chatbot_developement_info
+
+  - rule: happy path7
+    steps:
+      - intent: farewell
+      - action: utter_farewell
