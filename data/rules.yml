@@ -15,23 +15,36 @@ rules:
     steps:
       - intent: request_cloud_dev_info
       - action: utter_cloud_dev_info
+      - action: utter_cloud_dev_info_2
 
   - rule: happy path4
     steps:
       - intent: request_automation_info
       - action: utter_automation_info
-
+      - action: utter_automation_info_2
+      - action: utter_request_meeting
+      
   - rule: happy path5
     steps:
       - intent: request_web_developement_info
       - action: utter_web_developement_info
+      - action: utter_request_meeting
 
   - rule: happy path6
     steps:
       - intent: request_chatbot_dev_info
       - action: utter_chatbot_developement_info
-
+      - action: utter_chatbot_developement_info_2
+      - action: utter_request_meeting
+      
   - rule: happy path7
+    steps:
+      - intent: fast_request_4_general_info
+      - action: utter_fast_greet
+      - action: utter_general_info
+      
+  - rule: happy path8
     steps:
       - intent: farewell
       - action: utter_farewell
+      - action: utter_farewell_2

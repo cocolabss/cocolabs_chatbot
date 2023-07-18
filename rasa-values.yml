@@ -1,0 +1,21 @@
+applicationSettings:
+  debugMode: true
+  # initialModel: "https://github.com/cocolabss/coco_website/blob/model_test/models/20230713-051448-speedy-slab.tar.gz?raw=true"
+  trainInitialModel: true
+  credentials:
+    additionalChannelCredentials:
+      rest:
+
+initContainers:
+  - name: download-data
+    image: "bitnami/git:latest"
+    command: ["/bin/sh", "-c"]
+    # The train init container expects data files in the /app directory.
+    # The commands below make sure that the /app directory is empty, and then it clones the rasa-x-demo repository.
+    # The rasa image runs with UID 1001, that's why at the end you have to change owner for /app directory.
+    args:
+      - "cd /app && rm -rf {,.[!.],..?}* && git clone https://github.com/cocolabss/cocolabs_chatbot.git . && chown -R 1001:1001 /app"
+    # Mount the `/app` directory which is shared with the init container that trains a model.
+    volumeMounts:
+      - mountPath: /app
+        name: app-dir
