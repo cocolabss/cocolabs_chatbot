@@ -11,6 +11,7 @@ intents:
   - farewell
   - fast_request_4_general_info
   - asking_status_people
+  - fallback
 
 responses:
 

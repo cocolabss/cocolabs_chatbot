@@ -3,69 +3,57 @@ version: "3.1"
 nlu:
   - intent: greet
     examples: |
-      - Hola
       - hola
-      - Buenos días
+      - buenos dias
       - buenas tardes
-      - Buenas noches
-      - ¡Hola!
-      - OLA
-      - ola
-      - Ola
+      - buenas noches
+      - saludos
+      - quiubo
+      - bn o no
+      - bien o que
 
   - intent: asking_status_people
     examples: |
-      - cómo estás?
-      - COMO ESTAS?
-      - ¿Cómo estás?
-      - ¿Cómo está?
-      - ¿CÓMO ESTÁS?
-      - ¿CÓMO ESTÁ?
-      - ¿COMO ESTAS?
-      - ¿COMO ESTA?
-      - Qué tal?
-      - qué tal?
-      - ¿Cómo te va?
-      - ¿Como le va?
-      - ¿Como les va?
-      - cómo estan?
-      - cómo estás?
       - cómo está
-
+      - qué tal
+      - Cómo te va
+      - Como le va
+      - Como les va
+      - cómo estan
+      - cómo estás
 
   - intent: fast_request_4_general_info
     examples: |
-      - hola, ¿a que se dedican?
-      - hola, quiero información sobre lo que hacen
-      - buenas, me puedes brindar una descripción rapida de tus servicios?
-      - hola, ustedes que hacen?
-      - hola ustedes que hacen?
+      - hola a que se dedican
+      - hola quiero información sobre lo que hacen
+      - buenas me puedes brindar una descripción rapida de tus servicios
+      - hola ustedes que hacen
+      - hola ustedes que hacen
       - hola a que se dedican
       - buenas tardes me dan información sobre sus servicios por favor
 
   - intent: request_for_information
     examples: |
-      - a que se dedican? 
-      - Podrias darme mas informacion sobre tus productos.
-      - Me gustaria conocer acerca de sus servicios
-      - Quiero saber mas sobre lo que hacen
-      - No entiendo bien que hacen, me puedes explicar?
-      - Quisiera recibir informacion
-      - Necesito mas informacion sobre lo que realizan
-      - Quiero saber mas acerca de lo que producen
-      - Contame que hacen
-      - Ayudame a entender que hacen
+      - a que se dedican
+      - podrias darme mas informacion sobre tus productos
+      - me gustaria conocer acerca de sus servicios
+      - quiero saber mas sobre lo que hacen
+      - no entiendo bien que hacen me puedes explicar
+      - quisiera recibir informacion
+      - necesito mas informacion sobre lo que realizan
+      - quiero saber mas acerca de lo que producen
+      - contame que hacen
+      - ayudame a entender que hacen
       - que es cocolabs
       - qué es coco labs
       - dime que es coco labs
       - quiero información sobre lo que hacen
 
-
   - intent: request_cloud_dev_info
     examples: |
-      - ¿a que se refiere el desarrollo de aplicaciones para la nube?
-      - ¿que es el desarrollo de aplicaciones en la nube?
-      - ¿como funciona el desarrollo para la nube?
+      - a que se refiere el desarrollo de aplicaciones para la nube
+      - que es el desarrollo de aplicaciones en la nube
+      - como funciona el desarrollo para la nube
       - explicame el desarrollo en la nube
       - hableme del desarrollo de aplicaciones para la nube
       - cuentame sobre las apliaciones en la nube
@@ -73,20 +61,17 @@ nlu:
       - ayudame a entender las aplicaciones en la nube
       - no entiendo bien que son las aplicaciones en la nube
       - quisiera conocer acerca del desarrollo de aplicaciones en la nube
-      - ¿que es una aplicación en la nube?
+      - que es una aplicación en la nube
       - desarrollo de aplicaciones en la nube
       - quisiera saber sobre el desarrollo de aplicaciones en la nube
 
   - intent: request_automation_info
     examples: |
       - a que se refiere con automatización
-      - a que te refieres con automatizacion
       - que significa automatizar
       - que es automatizar
       - que es una automatizacion
       - automatizacion
-      - automatización
-      - automatizaciones
       - hablame sobre las automatizaciones
       - cuentame sobre las automatizaciones
       - quiero saber mas sobre las automatizaciones
@@ -96,9 +81,9 @@ nlu:
 
   - intent: request_web_developement_info
     examples: |
-      - a que se refiere el desarrollo de paginas web?
+      - a que se refiere el desarrollo de paginas web
       - que es el desarrollo de paginas web
-      - como funciona el desarrollo de paginas web?
+      - como funciona el desarrollo de paginas web
       - explicame el desarrollo de paginas web
       - hableme del desarrollo de paginas web
       - cuentame sobre el desarrollo de paginas web
@@ -112,10 +97,10 @@ nlu:
 
   - intent: request_chatbot_dev_info
     examples: |
-      - ¿a que se refiere con chatbot?
-      - ¿a que te refieres con chatbot?
-      - ¿que es un chatbot?
-      - ¿como funciona un chatbot?
+      - a que se refiere con chatbot
+      - a que te refieres con chatbot
+      - que es un chatbot
+      - como funciona un chatbot
       - explicame el funcionamiento de un chatbot
       - hableme sobre los chatbots
       - cuentame sobre los chatbots
@@ -123,13 +108,11 @@ nlu:
       - ayudame a entender los chatbots
       - no entiendo bien que es un chatbot
       - quisiera conocer acerca del desarrollo de chatbots
-      - chatbots
       - chatbot
       - quisiera saber sobre chatbots
 
   - intent: farewell
     examples: |
-      - gracias por la información, hasta luego
       - gracias por la informacion, hasta luego
       - nos vemos
       - adios
@@ -139,4 +122,5 @@ nlu:
       - chaito
       - la buena pues
       - hasta luego
-
+      - suerte
+      - gracias
