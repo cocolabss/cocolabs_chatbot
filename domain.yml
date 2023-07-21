@@ -10,6 +10,7 @@ intents:
   - request_web_developement_info
   - farewell
   - fast_request_4_general_info
+  - asking_status_people
 
 responses:
 
@@ -56,10 +57,15 @@ responses:
   - text:  "¿Te gustaría agendar una reunión con nuestro equipo?"
   - text:  "¿Te gustaría programar una cita con nosotros?"
 
+  utter_response_asking_statuses:
+  - text: "Estoy muy bien, gracias por preguntar. ¿Cómo puedo ayudarte?"
 
   utter_default_response:
     - text: "Lo siento, no comprendo tu mensaje. ¿Podrías reformularlo?"
   
+  utter_default:
+    - text: Lo siento, no puedo entender tu consulta en este momento. ¿Puedes intentar con otra pregunta?
+
   
 session_config:
   session_expiration_time: 60

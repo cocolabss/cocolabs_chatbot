@@ -7,7 +7,7 @@
 #Solo es necesario el rasa train, lo demas es para nombrar el modelo y es opcional
 2. 
     - Si deseas registrar el modelo con un nombre:
-    * rasa train --fixed-model-name contact_bot
+    * rasa train --fixed-model-name contact_botho
 
     - Si deseas registrar el modelo sin un nombre:
     * rasa train
@@ -19,3 +19,16 @@
 
     En api:
     * rasa run --enable-api
+
+# Cargar a digital ocean
+3. 
+
+    1. Instalar:
+
+        * doctl auth switch --context cocolabs
+        * helm install --namespace chatbots --values rasa-values.yml cocolabs-chatbot rasa/rasa
+
+        * helm uninstall cocolabs-chatbot --namespace chatbots (Para eliminar)
+
+    2. Cargar:
+        * helm upgrade --namespace chatbots --reuse-values -f rasa-values.yaml cocolabs-chatbot rasa/rasa
