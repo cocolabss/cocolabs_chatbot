@@ -25,7 +25,7 @@ pipeline:
     epochs: 100
   - name: FallbackClassifier
     threshold: 0.2
-    ambiguity_threshold: 0.1
+    ambiguity_threshold: 0.2
 
 # Configuration for Rasa Core.
 # https://rasa.com/docs/rasa/core/policies/

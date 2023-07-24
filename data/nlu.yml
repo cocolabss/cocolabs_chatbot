@@ -9,7 +9,6 @@ nlu:
       - buenas noches
       - saludos
       - quiubo
-      - bn o no
       - bien o que
 
   - intent: asking_status_people
@@ -110,6 +109,24 @@ nlu:
       - quisiera conocer acerca del desarrollo de chatbots
       - chatbot
       - quisiera saber sobre chatbots
+
+  # - intent: request_system_integration_info
+  #   examples: |
+  #     - a que se refiere con integracion de sistemas
+  #     - a que te refieres con integracion de sistemas
+  #     - que es una integracion de sistemas
+  #     - como funciona una integracion de sistemas
+  #     - explicame el funcionamiento de una integracion de sistemas
+  #     - hableme sobre la integracion de sistemas
+  #     - cuentame sobre la integracion de sistemas
+  #     - quiero saber mas sobre la integracion de sistemas
+  #     - ayudame a entender la integracion de sistemas
+  #     - no entiendo bien que es la integracion de sistemas
+  #     - quisiera conocer acerca de la integracion de sistemas
+  #     - integracion de sistemas
+  #     - quisiera saber sobre integracion de sistemas
+  #     - me podrias dar info sobre la integracion de sistemas
+  #     - me podrias dar informacion sobre la integracion de sistemas
 
   - intent: farewell
     examples: |

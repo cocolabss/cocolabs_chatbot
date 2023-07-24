@@ -61,6 +61,7 @@ responses:
   utter_response_asking_statuses:
   - text: "Estoy muy bien, gracias por preguntar. ¿Cómo puedo ayudarte?"
 
+  
   utter_default_response:
     - text: "Lo siento, no comprendo tu mensaje. ¿Podrías reformularlo?"
   
