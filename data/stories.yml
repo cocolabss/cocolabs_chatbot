@@ -48,6 +48,14 @@ stories:
       - action: utter_chatbot_developement_info_2
       - action: utter_request_meeting
 
+  - story: requesting system integration info
+    steps:
+      - intent: request_system_integration_info
+      - action: utter_system_integration_info
+      - action: utter_system_integration_info_2
+      - action: utter_request_meeting
+
+
   - story: farewell
     steps:
       - intent: farewell

@@ -8,18 +8,19 @@
 
 2. 
     - Si deseas registrar el modelo con un nombre:
-    * rasa train --fixed-model-name contact_botho
+        * rasa train --fixed-model-name contact_botho
 
     - Si deseas registrar el modelo sin un nombre:
-    * rasa train
+        * rasa train
 
 #Ejecutar
 2. 
     - En consola:
-    * rasa shell 
-
-    En api:
-    * rasa run --enable-api
+        * rasa shell
+    - Para identificar intents en consola pero no probar las stories:
+        * rasa shell nlu
+    - En api:
+        * rasa run --enable-api
 
 # Cargar a digital ocean
 3. 
