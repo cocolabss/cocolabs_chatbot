@@ -22,10 +22,10 @@ pipeline:
     epochs: 100
   - name: EntitySynonymMapper
   - name: ResponseSelector
-    epochs: 100
+    epochs: 100 
   - name: FallbackClassifier
-    threshold: 0.2
-    ambiguity_threshold: 0.2
+    threshold: 0.5
+    ambiguity_threshold: 0.7
 
 # Configuration for Rasa Core.
 # https://rasa.com/docs/rasa/core/policies/
@@ -36,3 +36,9 @@ policies:
     epochs: 100
     constrain_similarities: True
   - name: RulePolicy
+    # Confidence threshold for the `core_fallback_action_name` to apply.
+    # The action will apply if no other action was predicted with
+    # a confidence >= core_fallback_threshold
+    core_fallback_threshold: 0.4
+    core_fallback_action_name: "action_default_fallback"
+    enable_fallback_prediction: True

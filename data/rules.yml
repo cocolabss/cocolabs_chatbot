@@ -6,66 +6,61 @@ rules:
       - intent: nlu_fallback
       - action: utter_default
 
-  - rule: fallback
-    steps:
-      - intent: nlu_fallback
-      - action: utter_default
+  # - rule: happy path
+  #   steps:
+  #     - intent: greet
+  #     - action: utter_greet
 
-  - rule: happy path
-    steps:
-      - intent: greet
-      - action: utter_greet
+  # - rule: asking status
+  #   steps:
+  #     - intent: asking_status_people
+  #     - action: utter_response_asking_statuses
 
-  - rule: asking status
-    steps:
-      - intent: asking_status_people
-      - action: utter_response_asking_statuses
+  # - rule: requesting general info
+  #   steps:
+  #     - intent: request_for_information
+  #     - action: utter_general_info
 
-  - rule: requesting general info
-    steps:
-      - intent: request_for_information
-      - action: utter_general_info
+  # - rule: requesting cloud dev info
+  #   steps:
+  #     - intent: request_cloud_dev_info
+  #     - action: utter_cloud_dev_info
+  #     - action: utter_cloud_dev_info_2
 
-  - rule: requesting cloud dev info
-    steps:
-      - intent: request_cloud_dev_info
-      - action: utter_cloud_dev_info
-      - action: utter_cloud_dev_info_2
+  # - rule: requesting automation info
+  #   steps:
+  #     - intent: request_automation_info
+  #     - action: utter_automation_info
+  #     - action: utter_automation_info_2
+  #     - action: utter_request_meeting
 
-  - rule: requesting automation info
-    steps:
-      - intent: request_automation_info
-      - action: utter_automation_info
-      - action: utter_automation_info_2
-      - action: utter_request_meeting
+  # - rule: requesting web development info
+  #   steps:
+  #     - intent: request_web_developement_info
+  #     - action: utter_web_developement_info
+  #     - action: utter_request_meeting
 
-  - rule: requesting web development info
-    steps:
-      - intent: request_web_developement_info
-      - action: utter_web_developement_info
-      - action: utter_request_meeting
+  # - rule: requesting chatbot info
+  #   steps:
+  #     - intent: request_chatbot_dev_info
+  #     - action: utter_chatbot_developement_info
+  #     - action: utter_chatbot_developement_info_2
+  #     - action: utter_request_meeting
 
-  - rule: requesting chatbot info
-    steps:
-      - intent: request_chatbot_dev_info
-      - action: utter_chatbot_developement_info
-      - action: utter_chatbot_developement_info_2
-      - action: utter_request_meeting
+  # - rule: 
+  #   steps:
+  #     - intent: request_system_integration_info
+  #     - action: utter_system_integration_info
+  #     - action: utter_system_integration_info_2
 
-  - rule: 
-    steps:
-      - intent: request_system_integration_info
-      - action: utter_system_integration_info
-      - action: utter_system_integration_info_2
+  # - rule: farewell
+  #   steps:
+  #     - intent: farewell
+  #     - action: utter_farewell
+  #     - action: utter_farewell_2
 
-  - rule: farewell
-    steps:
-      - intent: farewell
-      - action: utter_farewell
-      - action: utter_farewell_2
-
-  - rule: fast request for general info
-    steps:
-      - intent: fast_request_4_general_info
-      - action: utter_fast_greet
-      - action: utter_general_info
+  # - rule: fast request for general info
+  #   steps:
+  #     - intent: fast_request_4_general_info
+  #     - action: utter_fast_greet
+  #     - action: utter_general_info
