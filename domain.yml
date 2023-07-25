@@ -10,6 +10,9 @@ intents:
   - request_web_developement_info
   - farewell
   - fast_request_4_general_info
+  - asking_status_people
+  - fallback
+  - request_system_integration_info
 
 responses:
 
@@ -46,6 +49,12 @@ responses:
   utter_chatbot_developement_info_2:
     - text: "Con lo que podrías optimizar los procesos de atención, ya que se puede implementar por múltiples canales."
 
+  utter_system_integration_info:
+    - text: "La integración de software es la conexión y sincronización de diferentes aplicaciones y sistemas para que trabajen juntos de manera eficiente."
+
+  utter_system_integration_info_2:
+    - text: " Permite que los datos se compartan y se actualicen automáticamente entre diferentes plataformas, evitando la duplicación de tareas y mejorando la colaboración."
+
   utter_farewell:
     - text: "Esperamos que esta información haya sido de ayuda, recuerda que te has contactado con el chatbot de Coco Labs."
 
@@ -56,10 +65,16 @@ responses:
   - text:  "¿Te gustaría agendar una reunión con nuestro equipo?"
   - text:  "¿Te gustaría programar una cita con nosotros?"
 
+  utter_response_asking_statuses:
+  - text: "Estoy muy bien, gracias por preguntar. ¿Cómo puedo ayudarte?"
 
+  
   utter_default_response:
     - text: "Lo siento, no comprendo tu mensaje. ¿Podrías reformularlo?"
   
+  utter_default:
+    - text: Lo siento, no puedo entender tu consulta en este momento. ¿Puedes intentar con otra pregunta?
+
   
 session_config:
   session_expiration_time: 60
