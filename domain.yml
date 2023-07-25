@@ -12,6 +12,7 @@ intents:
   - fast_request_4_general_info
   - asking_status_people
   - fallback
+  - request_system_integration_info
 
 responses:
 
@@ -47,6 +48,12 @@ responses:
 
   utter_chatbot_developement_info_2:
     - text: "Con lo que podrías optimizar los procesos de atención, ya que se puede implementar por múltiples canales."
+
+  utter_system_integration_info:
+    - text: "La integración de software es la conexión y sincronización de diferentes aplicaciones y sistemas para que trabajen juntos de manera eficiente."
+
+  utter_system_integration_info_2:
+    - text: " Permite que los datos se compartan y se actualicen automáticamente entre diferentes plataformas, evitando la duplicación de tareas y mejorando la colaboración."
 
   utter_farewell:
     - text: "Esperamos que esta información haya sido de ayuda, recuerda que te has contactado con el chatbot de Coco Labs."
