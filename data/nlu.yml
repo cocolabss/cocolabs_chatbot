@@ -1,6 +1,10 @@
 version: "3.1"
 
 nlu:
+  - regex: estimation_object
+    examples: |
+      - \b.*\b
+
   - intent: greet
     examples: |
       - hola
@@ -24,7 +28,6 @@ nlu:
 
   - intent: fast_request_4_general_info
     examples: |
-      - servicios
       - hola a que se dedican
       - hola quiero informacion sobre lo que hacen
       - buenas me puedes brindar una descripcion rapida de tus servicios
@@ -35,6 +38,8 @@ nlu:
 
   - intent: request_for_information
     examples: |
+      - que servicios tienen
+      - servicios
       - a que se dedican
       - podrias darme mas informacion sobre tus productos
       - me gustaria conocer acerca de sus servicios
@@ -79,20 +84,22 @@ nlu:
       - automatizaciones de procesos
       - quisiera conocer acerca de la automatizacion de procesos
       - ayudame a entender la automatizacion
+
   - intent: request_web_developement_info
     examples: |
       - a que se refiere el desarrollo de paginas web
       - que es el desarrollo de paginas web
       - como funciona el desarrollo de paginas web
       - explicame el desarrollo de paginas web
-      - hableme del desarrollo de paginas web
+      - hableme del desarrollo de pag web
       - cuentame sobre el desarrollo de paginas web
       - quiero saber mas sobre el desarrollo de paginas web
-      - ayudame a entender el desarrollo de paginas web
+      - ayudame a entender el desarrollo de pag web
       - no entiendo bien que es el desarrollo de paginas web
       - quisiera conocer acerca del desarrollo de paginas web
       - desarrollo de paginas web
       - quisiera saber sobre el desarrollo de paginas web
+      - quiero cotizar una pag web
       - paginas web
 
   - intent: request_chatbot_dev_info
@@ -147,17 +154,18 @@ nlu:
   - intent: request_for_price
     examples: |
       - precio por favor
-      - cuanto es el precio de una integracion
-      - me cuentas cuanto cuesta una automatizacion
+      - cuanto es el precio de una [integracion](estimation_object)
+      - me cuentas cuanto cuesta una [automatizacion](estimation_object)
       - cuanto vale
-      - que precio tienen las aplicaciones en la nube
+      - que precio tienen las [aplicaciones en la nube](estimation_object)
       - a como es
       - cuanto valdria el servicio
       - cual es el costo de la implementacion
-      - cuanto vale un chatbot
-      - cual es el costo de un chat bot
-      - cuanto cuestan los chatbots
-      - a como son las paginas web?
+      - cuanto vale un [chatbot](estimation_object)
+      - cual es el costo de un [chat bot](estimation_object)
+      - cuanto cuestan los [chat bots](estimation_object)
+      - a como son las [paginas web](estimation_object)?
+      - necesito saber cuanto puede valer crear una [pagina web](estimation_object)
 
   - intent: request_appointment
     examples: |
@@ -183,3 +191,13 @@ nlu:
       - hasta luego
       - suerte
       - gracias
+
+  - intent: request_for_estimation
+    examples: |
+      - cuanto se demora implementar un [chatbot](estimation_object)
+      - cuanto tarda construir una [integracion de sistemas](estimation_object)
+      - cuanto podria tardar desarrollar una [aplicacion movil](estimation_object)
+      - cuanto toma diseñar una [pagina web](estimation_object)
+      - cuanto tiempo tarda montar una [app](estimation_object)
+      - cuanto se toma en realizar un [desarrollo en la nube](estimation_object)
+      - cuanto se demora hacer una [automatizacion](estimation_object)
