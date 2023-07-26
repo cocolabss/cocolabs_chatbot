@@ -147,13 +147,17 @@ nlu:
   - intent: request_for_price
     examples: |
       - precio por favor
-      - cuanto es el precio
-      - me cuentas cuanto cuesta
+      - cuanto es el precio de una integracion
+      - me cuentas cuanto cuesta una automatizacion
       - cuanto vale
-      - que precio tiene
+      - que precio tienen las aplicaciones en la nube
       - a como es
       - cuanto valdria el servicio
       - cual es el costo de la implementacion
+      - cuanto vale un chatbot
+      - cual es el costo de un chat bot
+      - cuanto cuestan los chatbots
+      - a como son las paginas web?
 
   - intent: request_appointment
     examples: |
