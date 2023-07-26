@@ -14,6 +14,7 @@ intents:
   - request_system_integration_info
   - request_system_mobile_app_info
   - request_for_price
+  - request_appointment
 
 responses:
   utter_fast_greet:

@@ -57,7 +57,7 @@ stories:
 
   - story: requesting price
     steps:
-      - intent: request_appointment
+      - intent: request_for_price
       - action: utter_request_for_price
       - action: utter_request_for_price_2
 
