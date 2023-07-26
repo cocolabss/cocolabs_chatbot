@@ -1,7 +1,6 @@
 version: "3.1"
 
 stories:
-
   - story: happy path
     steps:
       - intent: greet
@@ -50,6 +49,22 @@ stories:
       - action: utter_system_integration_info_2
       - action: utter_request_meeting
 
+  - story: requesting mobile app info
+    steps:
+      - intent: request_system_mobile_app_info
+      - action: utter_mobile_app_info
+      - action: utter_mobile_app_info_2
+
+  - story: requesting price
+    steps:
+      - intent: request_appointment
+      - action: utter_request_for_price
+      - action: utter_request_for_price_2
+
+  - story: requesting appointment
+    steps:
+      - intent: request_appointment
+      - action: utter_appointment
 
   - story: farewell
     steps:
@@ -62,6 +77,3 @@ stories:
       - intent: fast_request_4_general_info
       - action: utter_fast_greet
       - action: utter_general_info
-  
-
-  

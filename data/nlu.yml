@@ -23,6 +23,7 @@ nlu:
 
   - intent: fast_request_4_general_info
     examples: |
+      - servicios
       - hola a que se dedican
       - hola quiero información sobre lo que hacen
       - buenas me puedes brindar una descripción rapida de tus servicios
@@ -128,6 +129,42 @@ nlu:
       - me podrias dar info sobre la integracion de sistemas
       - me podrias dar informacion sobre la integracion de sistemas
 
+  - intent: request_system_mobile_app_info
+    examples: |
+      - que es una app
+      - a que te refieres con aplicaciones moviles
+      - que es una aplicacion movil
+      - como funciona una aplicacion movil
+      - explicame el funcionamiento de una aplicacion movil
+      - hableme sobre aplicaciones moviles
+      - cuentame sobre aplicaciones moviles
+      - quiero saber mas sobre las app
+      - ayudame a entender las app
+      - no entiendo bien que es una app
+      - quisiera conocer acerca de las app
+      - app
+
+  - intent: request_for_price
+    examples: |
+      - precio por favor
+      - cuanto es el precio?
+      - me cuentas cuanto cuesta?
+      - cuanto vale?
+      - que precio tiene?
+      - a como es?
+      - cuanto valdria el servicio?
+      - cual es el costo de la implementacion?
+
+  - intent: request_appointment
+    examples: |
+      - podemos agendar una reunion?
+      - quisiera agendar una cita
+      - por favor, agendemos una reunion.
+      - reunion
+      - agendar cita
+      - programar reunion
+      - quiero programar una asesoria
+      - me gustaria programar una cita
 
   - intent: farewell
     examples: |
