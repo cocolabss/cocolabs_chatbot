@@ -1,7 +1,6 @@
 version: "3.1"
 
 intents:
-
   - greet
   - request_for_information
   - request_cloud_dev_info
@@ -13,9 +12,11 @@ intents:
   - asking_status_people
   - fallback
   - request_system_integration_info
+  - request_system_mobile_app_info
+  - request_for_price
+  - request_appointment
 
 responses:
-
   utter_fast_greet:
     - text: "¡Hola! Espero que estés muy bien, te has comunicado con el chatbot de Coco🥥 labs."
 
@@ -27,7 +28,7 @@ responses:
     - text: "Coco es una empresa de desarrollo de software que se dedica a crear procesos de automatización, integración de sistemas y desarrollo web. Brindamos un servicio personalizado conforme a las necesidades de nuestros clientes, por lo que si estas interesado en nuestros servicios es importante que realicemos una reunion inicial donde nos indiques lo que tu o tu empresa necesita o busca solucionar, como funciona actualmente y posteriormente podamos brindarte una propuesta comercial del servicio junto a una cotización."
 
   utter_products_info:
-    - text: "En coco labs brindamos los siguientes servicios: \n🥥 Análisis y desarrollo de sistemas.\n.🥥 Aplicaciones en la nube.\n🥥 Automatización de procesos.\n🥥 Desarrollo de páginas web.\n🥥 Desarrollo de software a la medida.\n🥥 Desarrollo y mejoramiento de páginas web.\n🥥 Integración de sistemas.\n 🥥 Migración y Aplicaciones en la nube.\nComentame si deseas mas información sobre alguno en especifico."
+    - text: "En Coco Labs brindamos los siguientes servicios: \n🥥 Análisis y desarrollo de sistemas.\n.🥥 Aplicaciones en la nube.\n🥥 Automatización de procesos.\n🥥 Desarrollo de páginas web.\n🥥 Desarrollo de software a la medida.\n🥥 Desarrollo y mejoramiento de páginas web.\n🥥 Integración de sistemas.\n 🥥 Migración y Aplicaciones en la nube.\nComéntame si deseas más información sobre alguno en específico."
 
   utter_cloud_dev_info:
     - text: "La migración y aplicaciones en la nube se refiere al traslado de datos, aplicaciones y recursos de una infraestructura local a un entorno en la nube."
@@ -62,20 +63,36 @@ responses:
     - text: "Si tienes mas dudas no dudes en contactarte, ¡pasa un excelente día!"
 
   utter_request_meeting:
-  - text:  "¿Te gustaría agendar una reunión con nuestro equipo?"
-  - text:  "¿Te gustaría programar una cita con nosotros?"
+    - text: "¿Te gustaría agendar una reunión con nuestro equipo?"
+    - text: "¿Te gustaría programar una cita con nosotros?"
 
   utter_response_asking_statuses:
-  - text: "Estoy muy bien, gracias por preguntar. ¿Cómo puedo ayudarte?"
+    - text: "Estoy muy bien, gracias por preguntar. ¿Cómo puedo ayudarte?"
 
-  
   utter_default_response:
     - text: "Lo siento, no comprendo tu mensaje. ¿Podrías reformularlo?"
-  
+
   utter_default:
     - text: Lo siento, no puedo entender tu consulta en este momento. ¿Puedes intentar con otra pregunta?
 
-  
+  utter_mobile_app_info:
+    - text: Las aplicaciones móviles son la forma en que puedes llevar tu negocio a todas partes. Tus usuarios podrán interactuar con tu negocio donde quiera que estén desde sus dispositivos móviles.
+
+  utter_mobile_app_info_2:
+    - text: En Coco Labs te ayudamos a transformar esa idea en una poderosa aplicación móvil que llevara tu negocio al siguiente nivel.
+
+  utter_request_for_price:
+    - text: Para darte una cotización bien fundamentada, primero nos gustaría conocer tu negocio en una reunión inicial.
+
+  utter_request_for_price_2:
+    - text: De esta forma, tendremos más herramientas para poderte dar un precio más preciso.
+
+  utter_appointment:
+    - custom:
+        blocks:
+          - text: "En unos momentos, uno de nuestros agentes te atenderá."
+          - handoff: true
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

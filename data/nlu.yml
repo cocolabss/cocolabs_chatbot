@@ -13,23 +13,25 @@ nlu:
 
   - intent: asking_status_people
     examples: |
-      - cómo está
-      - qué tal
-      - Cómo te va
-      - Como le va
-      - Como les va
-      - cómo estan
-      - cómo estás
+      - como esta
+      - que tal
+      - como te va
+      - como le va
+      - como les va
+      - como estan
+      - como estas
+      - como estas
 
   - intent: fast_request_4_general_info
     examples: |
+      - servicios
       - hola a que se dedican
-      - hola quiero información sobre lo que hacen
-      - buenas me puedes brindar una descripción rapida de tus servicios
+      - hola quiero informacion sobre lo que hacen
+      - buenas me puedes brindar una descripcion rapida de tus servicios
       - hola ustedes que hacen
       - hola ustedes que hacen
       - hola a que se dedican
-      - buenas tardes me dan información sobre sus servicios por favor
+      - buenas tardes me dan informacion sobre sus servicios por favor
 
   - intent: request_for_information
     examples: |
@@ -44,9 +46,9 @@ nlu:
       - contame que hacen
       - ayudame a entender que hacen
       - que es cocolabs
-      - qué es coco labs
+      - que es coco labs
       - dime que es coco labs
-      - quiero información sobre lo que hacen
+      - quiero informacion sobre lo que hacen
 
   - intent: request_cloud_dev_info
     examples: |
@@ -60,13 +62,13 @@ nlu:
       - ayudame a entender las aplicaciones en la nube
       - no entiendo bien que son las aplicaciones en la nube
       - quisiera conocer acerca del desarrollo de aplicaciones en la nube
-      - que es una aplicación en la nube
+      - que es una aplicacion en la nube
       - desarrollo de aplicaciones en la nube
       - quisiera saber sobre el desarrollo de aplicaciones en la nube
 
   - intent: request_automation_info
     examples: |
-      - a que se refiere con automatización
+      - a que se refiere con automatizacion
       - que significa automatizar
       - que es automatizar
       - que es una automatizacion
@@ -75,9 +77,8 @@ nlu:
       - cuentame sobre las automatizaciones
       - quiero saber mas sobre las automatizaciones
       - automatizaciones de procesos
-      - quisiera conocer acerca de la automatizacion de procesos 
+      - quisiera conocer acerca de la automatizacion de procesos
       - ayudame a entender la automatizacion
-
   - intent: request_web_developement_info
     examples: |
       - a que se refiere el desarrollo de paginas web
@@ -128,10 +129,50 @@ nlu:
       - me podrias dar info sobre la integracion de sistemas
       - me podrias dar informacion sobre la integracion de sistemas
 
+  - intent: request_system_mobile_app_info
+    examples: |
+      - que es una app
+      - a que te refieres con aplicaciones moviles
+      - que es una aplicacion movil
+      - como funciona una aplicacion movil
+      - explicame el funcionamiento de una aplicacion movil
+      - hableme sobre aplicaciones moviles
+      - cuentame sobre aplicaciones moviles
+      - quiero saber mas sobre las app
+      - ayudame a entender las app
+      - no entiendo bien que es una app
+      - quisiera conocer acerca de las app
+      - app
+
+  - intent: request_for_price
+    examples: |
+      - precio por favor
+      - cuanto es el precio de una integracion
+      - me cuentas cuanto cuesta una automatizacion
+      - cuanto vale
+      - que precio tienen las aplicaciones en la nube
+      - a como es
+      - cuanto valdria el servicio
+      - cual es el costo de la implementacion
+      - cuanto vale un chatbot
+      - cual es el costo de un chat bot
+      - cuanto cuestan los chatbots
+      - a como son las paginas web?
+
+  - intent: request_appointment
+    examples: |
+      - podemos agendar una reunion
+      - quisiera agendar una cita
+      - por favor, agendemos una reunion.
+      - reunion
+      - agendar cita
+      - programar reunion
+      - quiero programar una asesoria
+      - me gustaria programar una cita
 
   - intent: farewell
     examples: |
-      - gracias por la informacion, hasta luego
+      - gracias por la informacion hasta luego
       - nos vemos
       - adios
       - chao

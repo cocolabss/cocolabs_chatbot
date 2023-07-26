@@ -1,6 +1,5 @@
 applicationSettings:
   debugMode: true
-  # initialModel: "https://github.com/cocolabss/coco_website/blob/model_test/models/20230713-051448-speedy-slab.tar.gz?raw=true"
   trainInitialModel: true
   credentials:
     additionalChannelCredentials:
