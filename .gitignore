@@ -133,3 +133,4 @@ dmypy.json
 
 results/
 models/
+.DS_Store

@@ -8,7 +8,6 @@ intents:
   - request_chatbot_dev_info
   - request_web_developement_info
   - farewell
-  - fast_request_4_general_info
   - asking_status_people
   - request_system_integration_info
   - request_system_mobile_app_info
@@ -16,10 +15,10 @@ intents:
   - request_appointment
   - request_for_estimation
 
-responses:
-  utter_fast_greet:
-    - text: "¡Hola! Espero que estés muy bien, te has comunicado con el chatbot de Coco Labs 🥥."
+entities:
+  - estimation_object
 
+responses:
   utter_greet:
     - text: "¡Hola! Espero que estés muy bien, te has comunicado con el chatbot de Coco Labs 🥥, ¿cómo puedo ayudarte?"
 
@@ -35,11 +34,15 @@ responses:
 
   utter_automation_info:
     - text: "La automatización de procesos de software consiste en usar tecnologías para realizar tareas repetitivas de forma automáticamente."
+
   utter_automation_info_2:
     - text: "Esto nos ayuda a ahorrar tiempo, esfuerzo y minimizar errores. Por ejemplo, en lugar de ingresar datos manualmente en un sistema, podemos programar un bot para hacerlo automáticamente."
 
   utter_web_developement_info:
     - text: "El desarrollo de paginas web consiste en la construcción de sitios web donde integramos información o aplicativos que ayuden a la realización de tareas en tu empresa."
+
+  utter_web_developement_info_2:
+    - text: "En Coco Labs somos especialistas en el desarrollo y actualización de páginas web! Anímate a agendar una reunión con nosotros para que construyamos la tuya."
 
   utter_chatbot_developement_info:
     - text: "Un chatbot es una tecnología que interactúa con las personas de forma automática y rápida usando datos predefinidos."

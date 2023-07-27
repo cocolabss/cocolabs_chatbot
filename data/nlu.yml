@@ -26,16 +26,6 @@ nlu:
       - como estas
       - como estas
 
-  - intent: fast_request_4_general_info
-    examples: |
-      - hola a que se dedican
-      - hola quiero informacion sobre lo que hacen
-      - buenas me puedes brindar una descripcion rapida de tus servicios
-      - hola ustedes que hacen
-      - hola ustedes que hacen
-      - hola a que se dedican
-      - buenas tardes me dan informacion sobre sus servicios por favor
-
   - intent: request_for_information
     examples: |
       - que servicios tienen

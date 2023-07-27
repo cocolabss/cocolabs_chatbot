@@ -32,6 +32,7 @@ stories:
     steps:
       - intent: request_web_developement_info
       - action: utter_web_developement_info
+      - action: utter_web_developement_info_2
 
   - story: requesting chatbot info
     steps:
@@ -67,12 +68,6 @@ stories:
       - intent: farewell
       - action: utter_farewell
       - action: utter_farewell_2
-
-  - story: fast request for general info
-    steps:
-      - intent: fast_request_4_general_info
-      - action: utter_fast_greet
-      - action: utter_general_info
 
   - story: request for estimation
     steps:
