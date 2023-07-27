@@ -167,6 +167,7 @@ nlu:
       - programar reunion
       - quiero programar una asesoria
       - me gustaria programar una cita
+      - que necesito
 
   - intent: farewell
     examples: |
@@ -191,3 +192,12 @@ nlu:
       - cuanto tiempo tarda montar una [app](estimation_object)
       - cuanto se toma en realizar un [desarrollo en la nube](estimation_object)
       - cuanto se demora hacer una [automatizacion](estimation_object)
+      - quiero cotizar
+      - cuanto costaria el desarrollo
+      - cuanto costaria montar
+      - cuanto costaria construir 
+      - cuanto me cobran por
+      - cuanto me valdria
+      - cuanto valdria
+      - cuanto valdria un desarrollo
+      - cuanto costaria un desarrollo
