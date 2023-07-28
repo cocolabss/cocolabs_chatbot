@@ -89,7 +89,6 @@ nlu:
       - quisiera conocer acerca del desarrollo de paginas web
       - desarrollo de paginas web
       - quisiera saber sobre el desarrollo de paginas web
-      - quiero cotizar una pag web
       - paginas web
 
   - intent: request_chatbot_dev_info
@@ -144,18 +143,20 @@ nlu:
   - intent: request_for_price
     examples: |
       - precio por favor
-      - cuanto es el precio de una [integracion](estimation_object)
-      - me cuentas cuanto cuesta una [automatizacion](estimation_object)
+      - cuanto es el precio de [una integracion](estimation_object)
+      - me cuentas cuanto cuesta [una automatizacion](estimation_object)
       - cuanto vale
-      - que precio tienen las [aplicaciones en la nube](estimation_object)
+      - que precio tienen [las aplicaciones en la nube](estimation_object)
       - a como es
+      - que costo tiene implementar [un chatbot](estimation_object)
       - cuanto valdria el servicio
       - cual es el costo de la implementacion
-      - cuanto vale un [chatbot](estimation_object)
-      - cual es el costo de un [chat bot](estimation_object)
-      - cuanto cuestan los [chat bots](estimation_object)
-      - a como son las [paginas web](estimation_object)?
-      - necesito saber cuanto puede valer crear una [pagina web](estimation_object)
+      - cuanto vale [un chatbot](estimation_object)
+      - cual es el costo de [un chat bot](estimation_object)
+      - cuanto cuestan [los chat bots](estimation_object)
+      - a como son [las paginas web](estimation_object)?
+      - necesito saber cuanto puede valer crear [una pagina web](estimation_object)
+      - quiero cotizar [una pag web](estimation_object)
 
   - intent: request_appointment
     examples: |
@@ -167,6 +168,19 @@ nlu:
       - programar reunion
       - quiero programar una asesoria
       - me gustaria programar una cita
+
+  - intent: request_handoff
+    examples: |
+      - quiero contactarme con un asesor
+      - quisiera hablar con una persona
+      - comunicame con una asesora
+      - podria hablar con una vendedora?
+      - puedo hablar con un agente?
+      - quien me podria ayudar?
+      - con quien puedo hablar?
+      - con quien podria comunicarme?
+      - alguien me puede atender?
+      - solicito que me atienda un asesor
 
   - intent: farewell
     examples: |

@@ -5,6 +5,7 @@ stories:
     steps:
       - intent: greet
       - action: utter_greet
+      - action: utter_greet_2
 
   - story: asking status
     steps:
@@ -61,7 +62,7 @@ stories:
   - story: requesting appointment
     steps:
       - intent: request_appointment
-      - action: utter_appointment
+      - action: utter_handoff
 
   - story: farewell
     steps:
@@ -72,4 +73,9 @@ stories:
   - story: request for estimation
     steps:
       - intent: request_for_estimation
-      - action: utter_appointment
+      - action: utter_handoff
+
+  - story: explicitly request handoff
+    steps:
+      - intent: request_handoff
+      - action: utter_handoff

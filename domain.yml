@@ -14,13 +14,17 @@ intents:
   - request_for_price
   - request_appointment
   - request_for_estimation
+  - request_handoff
 
 entities:
   - estimation_object
 
 responses:
   utter_greet:
-    - text: "¡Hola! Espero que estés muy bien, te has comunicado con el chatbot de Coco Labs 🥥, ¿cómo puedo ayudarte?"
+    - text: "¡Hola! Espero que estés muy bien, te has comunicado con el chatbot de Coco Labs 🥥. Soy una inteligencia artificial entrenada para responder preguntas relacionadas con los servicios que presta Coco Labs."
+
+  utter_greet_2:
+    - text: "En cualquier momento puedes solicitar que te atienda un asesor. ¿Cómo puedo ayudarte?"
 
   utter_general_info:
     - text: "Somos una empresa de desarrollo de software. Nos especializamos en el desarrollo de software para la nube, aplicaciones moviles, automatizacion de procesos, integracion de aplicaciones, chatbots y desarrollo de paginas web."
@@ -80,10 +84,10 @@ responses:
   utter_request_for_price_2:
     - text: De esta forma, tendremos más herramientas para poderte dar un precio más preciso.
 
-  utter_appointment:
+  utter_handoff:
     - custom:
         blocks:
-          - text: "En unos momentos, uno de nuestros agentes te atenderá."
+          - text: "Nuestros horarios de atencion son de lunes a viernes de 8:00 AM a 5:00 PM. En breve, uno de nuestros agentes te atenderá."
           - handoff: true
 
 session_config:
