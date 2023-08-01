@@ -79,3 +79,13 @@ stories:
     steps:
       - intent: request_handoff
       - action: utter_handoff
+
+  - story: requesting catalogo
+    steps: 
+      - intent: requesting_4_catalog
+      - action: utter_requesting_4_catalog
+
+  - story: requesting calling
+    steps:
+      - intent: requesting_4_contact_numer_4_calling
+      - action: utter_requesting_4_contact_numer_4_calling

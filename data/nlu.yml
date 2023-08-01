@@ -196,6 +196,21 @@ nlu:
       - suerte
       - gracias
 
+  - intent: requesting_4_contact_numer_4_calling
+    examples: |
+      - llamar
+      - llamada
+      - telefono
+      - celular
+
+  - intent: requesting_4_catalog
+    examples: |
+      - catalogo
+      - portafolio
+      - trabajos
+      - ejemplo
+
+
   - intent: request_for_estimation
     examples: |
       - cuanto se demora implementar un [chatbot](estimation_object)

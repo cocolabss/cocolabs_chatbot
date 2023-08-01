@@ -15,6 +15,8 @@ intents:
   - request_appointment
   - request_for_estimation
   - request_handoff
+  - requesting_4_contact_numer_4_calling
+  - requesting_4_catalog
 
 entities:
   - estimation_object
@@ -83,6 +85,12 @@ responses:
 
   utter_request_for_price_2:
     - text: De esta forma, tendremos más herramientas para poderte dar un precio más preciso.
+
+  utter_requesting_4_contact_numer_4_calling:
+    - text: "Puedes llamarnos a este mismo número, pero te recomendamos asignar una cita para comunicarnos con la mejor disposición."
+
+  utter_requesting_4_catalog:
+    - text: "Puedes encontrar nuestro portafolio en este enlace: 👉 https://www.cocolabs.com.co/ 🥥"
 
   utter_handoff:
     - custom:
